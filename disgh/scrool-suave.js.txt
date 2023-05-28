@@ -1,0 +1,28 @@
+ Função para lidar com o evento de rolagem do mouse
+function handleMouseWheel(event) {
+  event.preventDefault();  Impede o comportamento padrão de rolagem
+
+   Define a quantidade de rolagem em pixels por etapa
+  var scrollStep = 100;
+
+   Verifica a direção da rolagem do mouse
+  var delta = Math.max(-1, Math.min(1, (event.wheelDelta  -event.detail)));
+
+   Calcula a quantidade de rolagem
+  var scrollAmount = scrollStep  delta;
+
+   Aplica a rolagem suave em passos à página
+  window.scrollBy({
+    top scrollAmount,
+    left 0,
+    behavior 'smooth'
+  });
+}
+
+ Adiciona o ouvinte de evento de rolagem do mouse à página
+if (window.addEventListener) {
+  window.addEventListener('mousewheel', handleMouseWheel, false);  Suporte para navegadores modernos
+  window.addEventListener('DOMMouseScroll', handleMouseWheel, false);  Suporte para navegadores antigos
+} else {
+  window.attachEvent('onmousewheel', handleMouseWheel);  Suporte para o IE
+}
