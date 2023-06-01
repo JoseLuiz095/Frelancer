@@ -1,186 +1,138 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>TOUR ES</title>
+  <title>Painel dos Médicos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .column {
+      width: 45%;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    select {
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+    }
+  </style>
 </head>
-
 <body>
+  <h1>Painel dos Médicos</h1>
 
-    <!--Capa-->
+  <div class="container">
+    <div class="column">
+      <h2>Médicos</h2>
+      <form>
+        <div class="form-group">
+          <select id="medico1">
+            <option value="maria">Selecione</option>
+            <option value="maria">Dr. Maria</option>
+            <option value="jose">Dr. José</option>
+            <option value="renaldo">Dr. Renaldo</option>
+            <option value="alan">Dr. Alan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select id="medico1">
+            <option value="maria">Selecione</option>
+            <option value="maria">Dr. Maria</option>
+            <option value="jose">Dr. José</option>
+            <option value="renaldo">Dr. Renaldo</option>
+            <option value="alan">Dr. Alan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select id="medico1">
+            <option value="maria">Selecione</option>
+            <option value="maria">Dr. Maria</option>
+            <option value="jose">Dr. José</option>
+            <option value="renaldo">Dr. Renaldo</option>
+            <option value="alan">Dr. Alan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select id="medico1">
+            <option value="maria">Selecione</option>
+            <option value="maria">Dr. Maria</option>
+            <option value="jose">Dr. José</option>
+            <option value="renaldo">Dr. Renaldo</option>
+            <option value="alan">Dr. Alan</option>
+          </select>
+        </div>
+        <!-- Mais formulários para outros médicos -->
+      </form>
+    </div>
 
-   <section class="pagina">
-    <section class="header">
-        <img src="./img/backgroud.jpg" alt="imagem noturna da ponte de vitoria." class="header-img">
-        <section class="header-nav">
-            <img src="./img/iconES.png" alt="icone da empresa de turismo."class="header-logo">
-            <ul>
-                <li><a href="#pacotes">Pacote</a></li>
-                <li><a href="#carros">Carros</a></li>
-                <li><a href="#hos">Hospedagem</a></li>
-            </ul>
-        </section>
-        <section class="header-title">
-            <p class="header-bordao">Economiza muito com as melhores ofertas de viagem</p>
-        </section>
-    </section>
-    
-    <!--main-pacote-->
-    <section id="#pacotes" class="main">
-        <div class="main-esquerda">
-            <img src="./img/pacote.png" alt="icone de mala de viagem " class="main-img">
-            <h1 class="main-title">Pacotes</h1>
-            <p class="main-legenda">Saindo do Espirito Santo</p>
-            <h2 class="main-frase">Uma seleção de pacotes para suas próximas ferias</h2>
+    <div class="column">
+      <h2>Consultórios</h2>
+      <form>
+        <div class="form-group">
+          <select id="consultorio1">
+            <option value="maria">Selecione</option>
+            <option value="01">Consultório 01</option>
+            <option value="02">Consultório 02</option>
+            <option value="03">Consultório 03</option>
+            <option value="04">Consultório 04</option>
+            <option value="emergencia">Emergência</option>
+          </select>
         </div>
-        <div class="carossel">
-            <div class="opcao">
-                <img src="./img/backgroud.jpg" alt="">
-                <p class="voadora">Pacote</p>
-                <p>Guriri</p>
-                <div>
-                    <img src="./img/ponto-de-onibus.png" alt="">
-                <p>10 de junho de 2023 - 15...</p>
-                </div>
-                <p class="minimalista">Pacote a partir de</p>
-                <div>
-                    <p>R$</p>
-                    <p class="dinheiro">200</p>
-                </div>
-            </div>
-            <div class="opcao">
-                <img src="./img/backgroud.jpg" alt="">
-                <p class="voadora">Pacote</p>
-                <p>Anchieta</p>
-                <div>
-                    <img src="./img/ponto-de-onibus.png" alt="">
-                <p>10 de junho de 2023 - 15...</p>
-                </div>
-                <p class="minimalista">Pacote a partir de</p>
-                <div>
-                    <p>R$</p>
-                    <p class="dinheiro">200</p>
-                </div>
-            </div>
+        <div class="form-group">
+          <select id="consultorio1">
+            <option value="maria">Selecione</option>
+            <option value="01">Consultório 01</option>
+            <option value="02">Consultório 02</option>
+            <option value="03">Consultório 03</option>
+            <option value="04">Consultório 04</option>
+            <option value="emergencia">Emergência</option>
+          </select>
         </div>
-    </section>
-
-<!--main-Carros-->
-    <section id="#carros" class="main">
-        <div>
-            <img src="./img/iconcarro.png" alt="icone de Carro ">
-            <h1 class="main-title">Pacotes</h1>
-            <p class="main-legenda">Saindo do Espirito Santo</p>
-            <h2 class="main-frase">As melhores ofertas de Carros</h2>
+        <div class="form-group">
+          <select id="consultorio1">
+            <option value="maria">Selecione</option>
+            <option value="01">Consultório 01</option>
+            <option value="02">Consultório 02</option>
+            <option value="03">Consultório 03</option>
+            <option value="04">Consultório 04</option>
+            <option value="emergencia">Emergência</option>
+          </select>
         </div>
-        <div class="carossel">
-            <div class="opcao">
-                <img src="./img/backgroud.jpg" alt="">
-                <p class="voadora">Pacote</p>
-                <p>Guriri</p>
-                <div>
-                    <img src="./img/iconponto-de-onibus.png" alt="">
-                <p>10 de junho de 2023 - 15...</p>
-                </div>
-                <p class="minimalista">Pacote a partir de</p>
-                <div>
-                    <p>R$</p>
-                    <p class="dinheiro">200</p>
-                </div>
-            </div>
-            <div class="opcao">
-                <img src=".img/backgroud.jpg" alt="">
-                <p class="voadora">Pacote</p>
-                <p>Anchieta</p>
-                <div>
-                    <img src="./img/ponto-de-onibus.png" alt="">
-                <p>10 de junho de 2023 - 15...</p>
-                </div>
-                <p class="minimalista">Pacote a partir de</p>
-                <div>
-                    <p>R$</p>
-                    <p class="dinheiro">200</p>
-                </div>
-            </div>
+        <div class="form-group">
+          <select id="consultorio1">
+            <option value="maria">Selecione</option>
+            <option value="01">Consultório 01</option>
+            <option value="02">Consultório 02</option>
+            <option value="03">Consultório 03</option>
+            <option value="04">Consultório 04</option>
+            <option value="emergencia">Emergência</option>
+          </select>
         </div>
-    </section>
-
-<!--main-Hospedagem-->
-    <section id="#carros" class="main">
-        <div>
-            <img src="./img/iconhospedagem.png" alt="icone de Hospedagem ">
-            <h1 class="main-title">Hospedagem</h1>
-            <p class="main-legenda">Com a melhores ofertas</p>
-            <h2 class="main-frase">Diarias com preças especias em hotéis e resorts</h2>
-        </div>
-        <div class="carossel">
-            <div class="opcao">
-                <img src="./img/backgroud.jpg" alt="">
-                <p class="voadora">Hotel</p>
-                <p>Guriri</p>                
-                    <img src="./img/iconavaliacao4.png" alt="">
-                <p class="minimalista">Pacote a partir de</p>
-                <div>
-                    <p>R$</p>
-                    <p class="dinheiro">200</p>
-                </div>
-            </div>
-            <div class="opcao">
-                <img src="./img/backgroud.jpg" alt="">
-                <p class="voadora">Hotel</p>
-                <p>Guriri</p>                
-                    <img src="./img/iconavaliacao4.png" alt="">
-                <p class="minimalista">Pacote a partir de</p>
-                <div>
-                    <p>R$</p>
-                    <p class="dinheiro">200</p>
-                </div>
-            </div>
-            <div class="opcao">
-                <img src="./img/backgroud.jpg" alt="">
-                <p class="voadora">Hotel</p>
-                <p>Guriri</p>                
-                    <img src="./img/iconavaliacao4.png" alt="">
-                <p class="minimalista">Pacote a partir de</p>
-                <div>
-                    <p>R$</p>
-                    <p class="dinheiro">200</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <aside class="quemsomos">
-        <div class="aside-quemsomos">
-            <h2 class="aside-title">Quem somos</h2>
-            <img src="./img/iconpessoas1.png" alt="icone de pessoas" class="aside-img">
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, nulla nisi ab quis commodi asperiores porro </p>
-            <a href="#" class="aside-link">Saiba mais</a>
-        </div>
-        <div class="aside-quemsomos">
-            <h2 class="aside-title">Quem somos</h2>
-            <img src="./img/iconpessoas2.png" alt="icone de pessoas" class="aside-img">
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, nulla nisi ab quis commodi asperiores porro </p>
-            <a href="#" class="aside-link">Saiba mais</a>
-        </div>
-        <div class="aside-quemsomos">
-            <h2 class="aside-title">Quem somos</h2>
-            <img src="./img/iconpessoas3.png" alt="icone de pessoas" class="aside-img">
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, nulla nisi ab quis commodi asperiores porro </p>
-            <a href="#" class="aside-link">Saiba mais</a>
-        </div>
-    </aside>
-    <!--Footer-->
-    
-    <footer class="fim">
-        <p class="fim-creditos">Criador do site <a href="https://portifolio-jl095.netlify.app" class="footer-mysite">Joseluiz095</a></p>
-    </footer>
-    
-</section>
+        <!-- Mais formulários para outros consultórios -->
+      </form>
+    </div>
+  </div>
 </body>
-
 </html>
