@@ -1,138 +1,176 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Painel dos Médicos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
+    <title>Plantonistas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
-    h1 {
-      text-align: center;
-      font-size: 24px;
-    }
+        h1 {
+            margin-top: 50px;
+        }
 
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      max-width: 800px;
-      margin: 20px auto;
-    }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
 
-    .column {
-      width: 45%;
-    }
+        .column {
+            flex-basis: 33.33%;
+        }
 
-    .form-group {
-      margin-bottom: 10px;
-    }
+        .column:last-child {
+            margin-right: 50px;
+        }
 
-    label {
-      display: block;
-      font-weight: bold;
-    }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
 
-    select {
-      width: 100%;
-      padding: 5px;
-      font-size: 16px;
-    }
-  </style>
+        label {
+            font-size: 24px;
+        }
+
+        select {
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        .arrow {
+            font-size: 50px;
+            margin: 4px;
+        }
+        .primeiro{
+            margin-top: 20px;
+
+        }
+        .titulo-form{
+            margin: 0;
+            font-size: 2em;
+        }
+        .consultorio {
+            width: 350px;
+            height: 60px;
+            font-size: 24px;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .doctor {
+            width: 350px;
+            height: 60px;
+            font-size: 24px;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            
+        }
+
+        p {
+            margin-top: 30px;
+        }
+
+        img {
+            position: fixed;
+            width: 100px;
+            bottom: 10px;
+            width: 200px;
+            height: 100px;
+        }
+    
+    </style>
 </head>
+
 <body>
-  <h1>Painel dos Médicos</h1>
-
-  <div class="container">
-    <div class="column">
-      <h2>Médicos</h2>
-      <form>
-        <div class="form-group">
-          <select id="medico1">
-            <option value="maria">Selecione</option>
-            <option value="maria">Dr. Maria</option>
-            <option value="jose">Dr. José</option>
-            <option value="renaldo">Dr. Renaldo</option>
-            <option value="alan">Dr. Alan</option>
-          </select>
+    <h1 style="font-size: 2em;">Plantonistas</h1>
+    <div class="container">
+        <div class="column">
+            <p class="titulo-form">Médico</p>
+            <form>
+                <select id="doctor" class="doctor" >
+                    <option value="maria" >Selecione</option>
+                    
+                </select>
+                <select id="doctor" class="doctor" >
+                    <option value="maria" >Selecione</option>
+                </select>
+                <select id="doctor" class="doctor" >
+                    <option value="maria" >Selecione</option>
+                </select>
+                <select id="doctor" class="doctor" >
+                    <option value="maria" >Selecione</option>
+                </select>
+               
+            </form>
         </div>
-        <div class="form-group">
-          <select id="medico1">
-            <option value="maria">Selecione</option>
-            <option value="maria">Dr. Maria</option>
-            <option value="jose">Dr. José</option>
-            <option value="renaldo">Dr. Renaldo</option>
-            <option value="alan">Dr. Alan</option>
-          </select>
+        <div class="column">
+            <div class="arrow primeiro">➡️</div>
+            <div class="arrow">➡️</div>
+            <div class="arrow">➡️</div>
+            <div class="arrow">➡️</div>
         </div>
-        <div class="form-group">
-          <select id="medico1">
-            <option value="maria">Selecione</option>
-            <option value="maria">Dr. Maria</option>
-            <option value="jose">Dr. José</option>
-            <option value="renaldo">Dr. Renaldo</option>
-            <option value="alan">Dr. Alan</option>
-          </select>
+        <div class="column">
+            <p class="titulo-form">Consultório</p>
+            <form>
+                <select id="room" class="consultorio">
+                    <option value="01">Consultório 01</option>
+                </select>
+                <select id="room" class="consultorio">
+                    <option value="02">Consultório 02</option>
+                </select>
+                <select id="room" class="consultorio">
+                    <option value="03">Consultório 03</option>
+                </select>
+                <select id="room" class="consultorio">
+                    <option value="04">Consultório 04</option>
+                </select>
+            </form>
         </div>
-        <div class="form-group">
-          <select id="medico1">
-            <option value="maria">Selecione</option>
-            <option value="maria">Dr. Maria</option>
-            <option value="jose">Dr. José</option>
-            <option value="renaldo">Dr. Renaldo</option>
-            <option value="alan">Dr. Alan</option>
-          </select>
-        </div>
-        <!-- Mais formulários para outros médicos -->
-      </form>
     </div>
-
-    <div class="column">
-      <h2>Consultórios</h2>
-      <form>
-        <div class="form-group">
-          <select id="consultorio1">
-            <option value="maria">Selecione</option>
-            <option value="01">Consultório 01</option>
-            <option value="02">Consultório 02</option>
-            <option value="03">Consultório 03</option>
-            <option value="04">Consultório 04</option>
-            <option value="emergencia">Emergência</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select id="consultorio1">
-            <option value="maria">Selecione</option>
-            <option value="01">Consultório 01</option>
-            <option value="02">Consultório 02</option>
-            <option value="03">Consultório 03</option>
-            <option value="04">Consultório 04</option>
-            <option value="emergencia">Emergência</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select id="consultorio1">
-            <option value="maria">Selecione</option>
-            <option value="01">Consultório 01</option>
-            <option value="02">Consultório 02</option>
-            <option value="03">Consultório 03</option>
-            <option value="04">Consultório 04</option>
-            <option value="emergencia">Emergência</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select id="consultorio1">
-            <option value="maria">Selecione</option>
-            <option value="01">Consultório 01</option>
-            <option value="02">Consultório 02</option>
-            <option value="03">Consultório 03</option>
-            <option value="04">Consultório 04</option>
-            <option value="emergencia">Emergência</option>
-          </select>
-        </div>
-        <!-- Mais formulários para outros consultórios -->
-      </form>
-    </div>
-  </div>
+    <p>Atendimento de 0 a 15 anos, 11 meses e 29 dias.</p>
+    <img src="simpolinorte.jpg" alt="Logo" style="left: 10px;">
+    <img src="UpaInfantil.png" alt="Logo" style="right: 10px;">
+    
+    
+    <script>
+        // Supondo que você tenha uma variável chamada "opcoes" com os valores desejados
+        var opcoes = ["Dr. Alcino F.","Dr. Alan D.","Dr. Bárbara L.","Dr. Brysa F.","Dr. Camila S. ","Dr. Camila O.","Dr. Cinthya C.","Dr. Crisley ","Dr. Damaris F.","Dr. Daelle ","Dr. Emanuelly", "Dr. Felipe L.","Dr. Fernando P.","Dr. Giovanildo F.","Dr. Ingrid ","Dr. Jaqueline P.","Dr. Kaio Roger","Dr. Larissa ","Dr. Lara M.","Dr. Luana A.","Dr. Maiara C.","Dr. Maria E.","Dr. Michelly M.","Dr. Micaella ","Dr. Raphael M.","Dr. Rafaela ","Dr. Samara C.","Dr. Tiago T."];
+    
+        // Obtém a referência do elemento select
+        var select = document.getElementById("doctor");
+    
+        // Itera sobre as opções e cria elementos <option> para cada uma
+        for (var i = 0; i < opcoes.length; i++) {
+          var option = document.createElement("option");
+          option.value = opcoes[i];
+          option.text = opcoes[i];
+          select.appendChild(option);
+        }
+        // Supondo que você tenha uma variável chamada "opcoes" com os valores desejados
+        var opcoes2= ["Remoção de paciente", "Consulta em observação", "Reavaliação de paciente","Emergência"];
+    
+        // Obtém a referência do elemento select
+        var select = document.getElementById("consultorio");
+    
+        // Itera sobre as opções e cria elementos <option> para cada uma
+        for (var i = 0; i < opcoes2.length; i++) {
+          var option = document.createElement("option");
+          option.value = opcoes[i];
+          option.text = opcoes[i];
+          select.appendChild(option);
+        }
+      </script>
 </body>
+
 </html>
