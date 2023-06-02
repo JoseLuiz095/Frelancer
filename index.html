@@ -100,20 +100,24 @@
         <div class="column">
             <p class="titulo-form">Médico</p>
             <form>
-                <select id="doctor" class="doctor">
-                    <option value="maria">Selecione</option>
-
-                </select>
-                <select id="doctor" class="doctor">
+                <select id="doctor1" class="doctor">
                     <option value="maria">Selecione</option>
                 </select>
-                <select id="doctor" class="doctor">
+            </form>
+            <form>
+                <select id="doctor2" class="doctor">
                     <option value="maria">Selecione</option>
                 </select>
-                <select id="doctor" class="doctor">
+            </form>
+            <form>
+                <select id="doctor3" class="doctor">
                     <option value="maria">Selecione</option>
                 </select>
-
+            </form>
+            <form>
+                <select id="doctor4" class="doctor">
+                    <option value="maria">Selecione</option>
+                </select>
             </form>
         </div>
         <div class="column">
@@ -125,17 +129,23 @@
         <div class="column">
             <p class="titulo-form">Consultório</p>
             <form>
-                <select id="room" class="consultorio">
-                    <option value="01">Consultório 01</option>
+                <select id="room1" class="consultorio">
+                    <option id="room" value="01">Consultório 01</option>
                 </select>
-                <select id="room" class="consultorio">
-                    <option value="02">Consultório 02</option>
+            </form>
+            <form>
+                <select id="room2" class="consultorio">
+                    <option id="room" value="01">Consultório 02</option>
                 </select>
-                <select id="room" class="consultorio">
-                    <option value="03">Consultório 03</option>
+            </form>
+            <form>
+                <select id="room3" class="consultorio">
+                    <option id="room" value="01">Consultório 03</option>
                 </select>
-                <select id="room" class="consultorio">
-                    <option value="04">Consultório 04</option>
+            </form>
+            <form>
+                <select id="room4" class="consultorio">
+                    <option id="room" value="01">Consultório 04</option>
                 </select>
             </form>
         </div>
@@ -147,31 +157,54 @@
 
     <script>
         // Supondo que você tenha uma variável chamada "opcoes" com os valores desejados
-        var opcoes = ["Dr. Alcino F.", "Dr. Alan D.", "Dr. Bárbara L.", "Dr. Brysa F.", "Dr. Camila S. ", "Dr. Camila O.", "Dr. Cinthya C.", "Dr. Crisley ", "Dr. Damaris F.", "Dr. Daelle ", "Dr. Emanuelly", "Dr. Felipe L.", "Dr. Fernando P.", "Dr. Giovanildo F.", "Dr. Ingrid ", "Dr. Jaqueline P.", "Dr. Kaio Roger", "Dr. Larissa ", "Dr. Lara M.", "Dr. Luana A.", "Dr. Maiara C.", "Dr. Maria E.", "Dr. Michelly M.", "Dr. Micaella ", "Dr. Raphael M.", "Dr. Rafaela ", "Dr. Samara C.", "Dr. Tiago T."];
+        var form1Options = ["Dr. Alcino F.", "Dr. Alan D.", "Dr. Bárbara L.", "Dr. Brysa F.", "Dr. Camila S. ", "Dr. Camila O.", "Dr. Cinthya C.", "Dr. Crisley ", "Dr. Damaris F.", "Dr. Daelle ", "Dr. Emanuelly", "Dr. Felipe L.", "Dr. Fernando P.", "Dr. Giovanildo F.", "Dr. Ingrid ", "Dr. Jaqueline P.", "Dr. Kaio Roger", "Dr. Larissa ", "Dr. Lara M.", "Dr. Luana A.", "Dr. Maiara C.", "Dr. Maria E.", "Dr. Michelly M.", "Dr. Micaella ", "Dr. Raphael M.", "Dr. Rafaela ", "Dr. Samara C.", "Dr. Tiago T."];
 
         // Obtém a referência do elemento select
-        var select = document.getElementById("doctor");
-
+        var select = document.getElementById("doctor1");
+        var select = document.getElementById("doctor2");
+        var select = document.getElementById("doctor3");
+        var select = document.getElementById("doctor4");
         // Itera sobre as opções e cria elementos <option> para cada uma
-        for (var i = 0; i < opcoes.length; i++) {
-            var option = document.createElement("option");
-            option.value = opcoes[i];
-            option.text = opcoes[i];
-            select.appendChild(option);
+        preencherSelect(doctor1, form1Options);
+        preencherSelect(doctor2, form1Options);
+        preencherSelect(doctor3, form1Options);
+        preencherSelect(doctor4, form1Options);
+
+        function preencherSelect(select, opcoes) {
+            for (var i = 0; i < opcoes.length; i++) {
+                var option = document.createElement("option");
+                option.value = opcoes[i];
+                option.text = opcoes[i];
+                select.appendChild(option);
+            }
         }
+
+
+
         // Supondo que você tenha uma variável chamada "opcoes" com os valores desejados
-        var opcoes2 = ["Remoção de paciente", "Consulta em observação", "Reavaliação de paciente", "Emergência"];
+        var form1Options = ["Remoção de paciente", "Consulta em observação", "Reavaliação de paciente", "Emergência"];
 
         // Obtém a referência do elemento select
-        var select = document.getElementById("room");
-
+        var select = document.getElementById("room1");
+        var select = document.getElementById("room2");
+        var select = document.getElementById("room3");
+        var select = document.getElementById("room4");
         // Itera sobre as opções e cria elementos <option> para cada uma
-        for (var i = 0; i < opcoes2.length; i++) {
-            var option = document.createElement("option");
-            option.value = opcoes2[i];
-            option.text = opcoes2[i];
-            select.appendChild(option);
+        preencherSelect(room1, form1Options);
+        preencherSelect(room2, form1Options);
+        preencherSelect(room3, form1Options);
+        preencherSelect(room4, form1Options);
+
+        function preencherSelect(select, opcoes) {
+            for (var i = 0; i < opcoes.length; i++) {
+                var option = document.createElement("option");
+                option.value = opcoes[i];
+                option.text = opcoes[i];
+                select.appendChild(option);
+            }
         }
+
+
     </script>
 </body>
 
