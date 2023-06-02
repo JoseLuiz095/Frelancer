@@ -34,7 +34,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            
+
         }
 
         label {
@@ -50,14 +50,17 @@
             font-size: 50px;
             margin: 4px;
         }
-        .primeiro{
+
+        .primeiro {
             margin-top: 20px;
 
         }
-        .titulo-form{
+
+        .titulo-form {
             margin: 0;
             font-size: 2em;
         }
+
         .consultorio {
             width: 350px;
             height: 60px;
@@ -74,7 +77,7 @@
             padding: 10px;
             margin: 5px;
             text-align: center;
-            
+
         }
 
         p {
@@ -88,7 +91,6 @@
             width: 200px;
             height: 100px;
         }
-    
     </style>
 </head>
 
@@ -98,20 +100,20 @@
         <div class="column">
             <p class="titulo-form">Médico</p>
             <form>
-                <select id="doctor" class="doctor" >
-                    <option value="maria" >Selecione</option>
-                    
+                <select id="doctor" class="doctor">
+                    <option value="maria">Selecione</option>
+
                 </select>
-                <select id="doctor" class="doctor" >
-                    <option value="maria" >Selecione</option>
+                <select id="doctor" class="doctor">
+                    <option value="maria">Selecione</option>
                 </select>
-                <select id="doctor" class="doctor" >
-                    <option value="maria" >Selecione</option>
+                <select id="doctor" class="doctor">
+                    <option value="maria">Selecione</option>
                 </select>
-                <select id="doctor" class="doctor" >
-                    <option value="maria" >Selecione</option>
+                <select id="doctor" class="doctor">
+                    <option value="maria">Selecione</option>
                 </select>
-               
+
             </form>
         </div>
         <div class="column">
@@ -141,36 +143,36 @@
     <p>Atendimento de 0 a 15 anos, 11 meses e 29 dias.</p>
     <img src="simpolinorte.jpg" alt="Logo" style="left: 10px;">
     <img src="UpaInfantil.png" alt="Logo" style="right: 10px;">
-    
-    
+
+
     <script>
         // Supondo que você tenha uma variável chamada "opcoes" com os valores desejados
-        var opcoes = ["Dr. Alcino F.","Dr. Alan D.","Dr. Bárbara L.","Dr. Brysa F.","Dr. Camila S. ","Dr. Camila O.","Dr. Cinthya C.","Dr. Crisley ","Dr. Damaris F.","Dr. Daelle ","Dr. Emanuelly", "Dr. Felipe L.","Dr. Fernando P.","Dr. Giovanildo F.","Dr. Ingrid ","Dr. Jaqueline P.","Dr. Kaio Roger","Dr. Larissa ","Dr. Lara M.","Dr. Luana A.","Dr. Maiara C.","Dr. Maria E.","Dr. Michelly M.","Dr. Micaella ","Dr. Raphael M.","Dr. Rafaela ","Dr. Samara C.","Dr. Tiago T."];
-    
+        var opcoes = ["Dr. Alcino F.", "Dr. Alan D.", "Dr. Bárbara L.", "Dr. Brysa F.", "Dr. Camila S. ", "Dr. Camila O.", "Dr. Cinthya C.", "Dr. Crisley ", "Dr. Damaris F.", "Dr. Daelle ", "Dr. Emanuelly", "Dr. Felipe L.", "Dr. Fernando P.", "Dr. Giovanildo F.", "Dr. Ingrid ", "Dr. Jaqueline P.", "Dr. Kaio Roger", "Dr. Larissa ", "Dr. Lara M.", "Dr. Luana A.", "Dr. Maiara C.", "Dr. Maria E.", "Dr. Michelly M.", "Dr. Micaella ", "Dr. Raphael M.", "Dr. Rafaela ", "Dr. Samara C.", "Dr. Tiago T."];
+
         // Obtém a referência do elemento select
         var select = document.getElementById("doctor");
-    
+
         // Itera sobre as opções e cria elementos <option> para cada uma
         for (var i = 0; i < opcoes.length; i++) {
-          var option = document.createElement("option");
-          option.value = opcoes[i];
-          option.text = opcoes[i];
-          select.appendChild(option);
+            var option = document.createElement("option");
+            option.value = opcoes[i];
+            option.text = opcoes[i];
+            select.appendChild(option);
         }
         // Supondo que você tenha uma variável chamada "opcoes" com os valores desejados
-        var opcoes2= ["Remoção de paciente", "Consulta em observação", "Reavaliação de paciente","Emergência"];
-    
+        var opcoes2 = ["Remoção de paciente", "Consulta em observação", "Reavaliação de paciente", "Emergência"];
+
         // Obtém a referência do elemento select
         var select = document.getElementById("room");
-    
+
         // Itera sobre as opções e cria elementos <option> para cada uma
         for (var i = 0; i < opcoes2.length; i++) {
-          var option = document.createElement("option");
-          option.value = opcoes[i];
-          option.text = opcoes[i];
-          select.appendChild(option);
+            var option = document.createElement("option");
+            option.value = opcoes2[i];
+            option.text = opcoes2[i];
+            select.appendChild(option);
         }
-      </script>
+    </script>
 </body>
 
 </html>
